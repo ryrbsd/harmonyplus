@@ -1,0 +1,218 @@
+body {
+    padding-bottom: 120px;
+    /*background-color: #d3d3d3;*/
+    background-color: white;
+    font-family: "Microsoft YaHei";
+}
+
+h1 {
+    /*text-align: center;*/
+    color: white;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 30;
+    text-align: center;
+    color: rgb(83,170,142);
+}
+
+h3 {
+    /*text-align: center;*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+hr {
+    width: 3.5%;
+    /*border-color: teal;*/
+    border: 3px solid rgb(83,170,142);
+}
+
+.heading {
+    color: #fff;
+    font-size: 64px;
+	margin: 45px 0 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+.theImage {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background:url("../img/Logos/Logo2.png") no-repeat;
+  background-size: 134px 46px;
+  /*width:134px;*/
+  /*height:46px;*/
+  padding-left: 180px;
+}
+
+.special_links{
+    text-align: center;
+    color: white;
+}
+
+nav.transparent-nav {
+  /*margin-top: -40px;*/
+  background: transparent;
+  position: fixed;
+  background: -webkit-linear-gradient(#202020, transparent);
+   /*For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#202020, transparent);
+   /*For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#202020, transparent);
+   /*For Firefox 3.6 to 15 */
+  background: linear-gradient(#202020, transparent);
+   /*Standard syntax (must be last) */
+}
+
+nav.transparent-nav .links a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.opening{
+    margin-top: -110px;
+    background-image: url("../img/homepage/Lighthouse.png");
+    height: 800px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+    overflow: hidden;
+}
+
+.opening .container {
+  margin-top: 300px;
+  margin-left: 35%;
+  width: 60%;
+}
+
+.opening .container p {
+  color: white;
+  font-size: 24px;
+}
+
+.btn-primary {
+    color: rgb(83,170,142);
+    background-color: transparent;
+    border-color: white;
+}
+
+.btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: rgb(83,170,142);
+    border-color: transparent;
+}
+
+.story_button {
+    left: 50%;
+    margin-left: -50px;
+    position: absolute;
+    bottom: 200px;
+    
+}
+
+/*.special_text{*/
+/*    text-align: center;*/
+/*    font-size: 24px;*/
+/*}*/
+
+/*.col-md-6-left{*/
+/*    float: left;*/
+/*    background:url("../img/Campus.png") no-repeat;*/
+/*    background-size: cover;*/
+/*    height: 300px;*/
+/*    width: 50%;*/
+/*    background-position: center center;*/
+/*    overflow: hidden;*/
+/*    position: relative;*/
+/*    min-height: 1px;*/
+/*    padding-right: 15px;*/
+/*    padding-left: 15px;*/
+/*}*/
+
+/*.col-md-6-right{*/
+/*    float: left;*/
+/*    background:url("../img/World.png") no-repeat;*/
+/*    background-size: cover;*/
+/*    height: 300px;*/
+/*    width: 50%;*/
+/*    background-position: center center;*/
+/*    overflow: hidden;*/
+/*    position: relative;*/
+/*    min-height: 1px;*/
+/*    padding-right: 15px;*/
+/*    padding-left: 15px;*/
+/*}*/
+
+.col-md-6{
+    margin-bottom: 150px;
+}
+
+.col-md-6 .footer{
+    height: 150px;
+    width: 563.656px;
+    bottom: -150px;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.col-md-6 p{
+    color:white;
+    text-align: center;
+}
+
+.text_container{
+    text-align: center;
+}
+
+.text_container p {
+    color: #808080;
+    font-weight: 550;
+}
+.marquee{
+    /*width: 100%;*/
+    margin-left: 135px;
+    margin-right: 135px;
+    height:500px;
+    background-repeat: repeat-x;
+    /*animation: marquee 45s linear infinite;*/
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+.col-md-4 {
+    height: 500px;
+}
+
+.story {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    color: #808080;
+    font-family: "Microsoft YaHei";
+}
+
+.image {
+    text-align: center;
+}
+
+h4, h5 {
+    font-weight: bold;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+}
+
+h5 {
+    font-size: medium;
+}

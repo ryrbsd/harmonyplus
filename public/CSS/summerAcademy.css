@@ -1,0 +1,373 @@
+body{
+    background-color: white;
+    overflow-x: hidden;
+    width: 100%;
+    font-family: "Microsoft YaHei";
+}
+
+.container
+{
+    width:100%;
+    text-align: center;
+}
+
+.info1
+{
+    width: 100%;
+    height: 600px;
+}
+
+.info2
+{
+    width: 100%;
+    height: 450px;
+}
+
+.info3
+{
+    width: 100%;
+    height: 450px;
+}
+
+.info1_right
+{
+    width: 50%;
+    float: right;
+    position: relative;
+    top: 100px;
+    left: 20%;
+    /*right: 20px;*/
+    height: 600px;
+}
+
+.info1_left
+{
+    width: 50%;
+    float: left;
+    position: relative;
+    top: 100px;
+    left: 9%;
+    height: 600px;
+}
+
+.info2_right
+{
+    width: 50%;
+    float: right;
+    position: relative;
+    top: 160px;
+    left: 20%;
+    /*right: 20px;*/
+    height: 450px;
+}
+
+.info2_left
+{
+    width: 50%;
+    float: left;
+    position: relative;
+    top: 120px;
+    left: 9%;
+    height: 450px;
+}
+
+.info3_right
+{
+    width: 50%;
+    float: right;
+    position: relative;
+    top: -10px;
+    left: 20%;
+    /*right: 20px;*/
+    height: 300px;
+}
+
+.info3_left
+{
+    width: 50%;
+    float: left;
+    position: relative;
+    top: -10px;
+    left: 9%;
+    height: 300px;
+}
+
+.info2_left a
+{
+    float: right;
+}
+
+.info3_left a
+{
+    float: right;
+}
+
+.top_container p{
+    color: gray;
+    font-weight: 300;
+}
+
+.b-bay_time p, .ideal_time p, .info1_right p
+{
+    color: black;
+    font-weight: normal;
+}
+
+.b-bay_time
+{
+    position: relative;
+    top: 100px;
+}
+
+.ideal_time
+{
+    position: relative;
+    top: 180px;
+}
+
+.text {
+    margin-top: 350px;
+    position: relative;
+    top: -300px;
+    width:100%;
+    text-align: center;
+}
+
+h1{
+    color: rgb(83,170,142);
+    font-size: 28px;
+}
+
+
+.text p{
+    color: gray;
+    
+}
+
+.videos p
+{
+    font-size: 14px;
+}
+
+.top_container
+{
+    height: 1450px;
+    width: 95%;
+}
+
+
+
+.bottom_container
+{
+    position: relative;
+    height: 350px;
+}
+
+.bottom_left
+{
+    width: 42%;
+    float: left;
+    position: relative;
+    left: 7%;
+    top: 200px;
+    height: 350px;
+    text-align: right;
+    font-size: 13px;
+}
+
+.bottom_right
+{
+    width: 42%;
+    float: right;
+    position: relative;
+    top: 200px;
+    right: 7%;
+    font-size: 13px;
+    height: 350px;
+    
+}
+
+.top_container hr
+{
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DADAD9;
+    position: relative;
+    top: 15px;
+}
+
+
+
+.center_bottom hr
+{
+    border-style: solid;
+    width: 40px;
+    border-width: 3px;
+    border-color: rgb(83,170,142);
+}
+
+
+h2, h3, h4, h6
+{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h5, h7
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h4, h6
+{
+    color: rgb(83,170,142);
+}
+
+.top_container
+{
+    font-size: 16px;
+}
+
+h8
+{
+    font-size: 24px;
+}
+h10{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.center_bottom
+{
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: 13px;
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+
+
+.bottom_images
+{
+    left: 13%;
+    right: 13%;
+    position: relative;
+    top: 150px;
+    height: 350px;
+}
+
+.bottom_images2
+{
+    left: 13%;
+    right: 13%;
+    position: relative;
+    top: 80px;
+    bottom: 3%;
+    height: 450px;
+}
+
+
+.bottom_images .image
+{
+    position: relative; 
+    width: 100%;
+}
+
+
+
+.bottom_images2 .image
+{
+    position: relative; 
+    width: 100%;
+    top: -20px;
+}
+
+h9
+{
+    position: absolute; 
+    top: 190px; 
+    left: 1px;
+    width: 100%;
+    color: white;
+    font-weight: 900;
+}
+
+h11
+{
+    color: rgb(83,170,142);
+}
+
+.photo
+{
+    float:left; 
+    padding:5px;
+}
+
+.photo2
+{
+    float:left; 
+    padding:5px;
+    margin-bottom: 100px;
+}
+
+/*nav.transparent-nav {*/
+/*  margin-top: -40px;*/
+/*  background: transparent;*/
+/*  position: fixed;*/
+/*  background: -webkit-linear-gradient(rgba(255,255,255,1), transparent);*/
+   /*For Safari 5.1 to 6.0 */
+/*  background: -o-linear-gradient(rgba(255,255,255,1), transparent);*/
+   /*For Opera 11.1 to 12.0 */
+/*  background: -moz-linear-gradient(rgba(255,255,255,1), transparent);*/
+   /*For Firefox 3.6 to 15 */
+/*  background: linear-gradient(rgba(255,255,255,1), transparent);*/
+   /*Standard syntax (must be last) */
+/*}*/
+
+/*nav.transparent-nav .links a {*/
+/*  color: black;*/
+/*  text-align: center;*/
+/*  padding: 14px 16px;*/
+/*  text-decoration: none;*/
+/*}*/
+
+.opening{
+    width: 100%;
+    margin-top: 70px;
+    background-image: url("../img/summerAcademy/opening.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+
+.btn-primary {
+    color: rgb(83,170,142);
+    background-color: transparent;
+    border-color: rgb(83,170,142);
+    padding: 1px 12px;
+    width: 80px;
+}
+
+.btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: rgb(83,170,142);
+    border-color: transparent;
+}
+
+.chinese {
+    font-size: 115%;
+    color: gray;
+}
+
+.chineseh9 {
+    font-size: 150%;
+}
+
+ul li ul li:hover {background: white;}
+ul li ul {
+  background-color: white;
+}

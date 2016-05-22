@@ -1,0 +1,185 @@
+<!--#include file="app/views/layouts.html.erb"-->
+<title>B-BAY</title>
+<head>
+<link rel="stylesheet" type="text/css" href="CSS/Navbar.css">
+<link rel="stylesheet" type="text/css" href="CSS/apply.css">
+<!--<link rel="stylesheet" type="text/css" href="CSS/index.css">-->
+</head>
+
+  <div class="left-view" style=background>
+    <div class="left-text">
+      <h4>B-BAY</h4><br>
+      <p>伯克利少年商学院</p><br>
+      <p><a class="btn btn-primary btn-lg" href="/about_us" role="button">More &raquo;</a></p>
+    </div>
+  </div>
+
+  <!--<div class="right-view">-->
+       <%= form_tag :action=> "create", :html => {:multipart => true} do %>
+        <div id="error_explanation" class="field_with_errors">
+          <% if @student != nil and @student.errors.any? %>
+            <!--<div id="error_explanation">-->
+            <ul>
+              <% @student.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+              <% end %>
+            </ul>
+          <% end %>
+          <% if flash[:error] %>
+              <div class="error"><%= flash[:error] %></div>
+            <% end %>
+          <% if flash[:notice] %>
+              <div class="notice"><%= flash[:notice] %></div>
+          <% end %>
+        </div>
+        <div class="application current">
+          <h1>个人信息</h1>
+          <%= text_field(:student, :first_name, {:class => 'applyf name', :placeholder => "名"})%>
+          <%= text_field(:student, :last_name, {:class => 'applyf name', :placeholder => "姓"})%>
+          <%= email_field(:student, :email, {:class => 'applyf', :placeholder => "电子邮箱"})%>
+          <%= number_field(:student, :age, {:class => 'applyf', :placeholder => "年龄"})%>
+          <%= select(:student, :gender, ['性别','男', '女'], {:class =>"gender"})%>
+          <%= label(:student, :dateOfBirth, '生日', {:class => "bday"})%>
+          <%= date_select :student, :dateOfBirth, :start_year=>1900%>
+        </div>
+        <div class="application next">
+          <h1>联系方式</h1>
+          <%= select(:student, :country, ['国家','美国', '中国'])%>
+          <%= select(:student, :country_code, ['+86', '+1'])%>
+          <%= telephone_field(:student, :phone_number, {:class => 'applyf', :placeholder => "电话号码"})%>
+          <%= text_field(:student, :addressLineOne, {:class => 'applyf', :placeholder => "地址"})%>
+          <%= text_field(:student, :addressLineTwo, {:class => 'applyf', :placeholder => "地址"})%>
+          <%= text_field(:student, :province, {:class => 'applyf province', :placeholder => "州/省"})%>
+          <%= text_field(:student, :city, {:class => 'applyf city', :placeholder => "城市"})%>
+          <%= text_field(:student, :zipCode, {:class => 'applyf zc', :placeholder => "邮政编码"})%>
+        </div>
+        <div class="application next">
+          <h1>教育背景</h1>
+          <%= text_field(:student, :school, {:class => 'applyf', :placeholder => "学校"})%>
+          <%= text_field(:student, :grade, {:class => 'applyf', :placeholder => "年级"})%>
+          <%= hidden_field_tag(:program, "b-bay") %>
+
+          <!--remove later before submit-->
+          <input type="submit" value="提交" class="btn submit-btn useless">
+        </div>
+        <div class="form-nav">
+          <a class="btn bright" id="next">下一步</a>
+          <!--<a class= "btn" id="prev" style="display: none;">Back</a>-->
+          <a class= "btn bleft" id="prev" style="display: none;">返回</a>
+          <input type="submit" id="submit" value="提交" class="btn submit-btn" style="display: none;">
+        </div>
+    <% end %>
+
+
+  
+  <!--INCLUDE SCRIPT FILES-->
+  <!--<script type="text/javascript" src="../apply.js"></script>-->
+
+<script>
+  $(function () {
+
+  var stepNumber = 0,
+    sumProgPortion = 0,
+    appStepsTotal = $('.application').length,
+    progPortion = 100 / appStepsTotal;
+
+  // APPLICATION FORM
+  $('#next').on('click', function (e) {
+    e.preventDefault();
+
+    if ($(this).hasClass('submit-btn')) {
+      return;
+    }
+
+    var $inView = $('.current');
+
+
+    $('.current').next().removeClass('next').addClass('current');
+    $inView.removeClass('current').addClass('prev');
+
+    stepNumber++;
+
+    sumProgPortion = sumProgPortion + progPortion;
+
+    if (stepNumber > 0) {
+      $('#prev').show();
+    }
+    
+
+    if (stepNumber === appStepsTotal - 1) {
+      $('#next').hide();
+      $('.submit-btn').show();
+      e.stopPropagation();
+    }
+
+  });
+  
+    $('#prev').on('click', function (e) {
+    e.preventDefault();
+
+    var $inView = $('.current');
+
+    $('.current').prev().removeClass('prev').addClass('current');
+    $inView.removeClass('current').addClass('next');
+
+    stepNumber--;
+
+
+
+    if (stepNumber < 1) {
+      $(this).hide();
+    }
+    
+
+    if (stepNumber < appStepsTotal - 1) {
+      $('#next').show();
+      $('.submit-btn').hide();
+    }
+  
+  });
+})
+</script>
+
+<script>
+    $(function () {
+
+      $('#fp').remove();
+      $('#story').remove();
+      $('#sa').remove();
+      $('#home').remove();
+      $('#contact').remove();
+      $('#language').remove();
+      $('#au').remove();
+      $('#apply').remove();
+      
+      var homepage = "<a id='home' href='/cn_index' style='position: relative;right: 25px;'>首页</a>"
+        $('.links').append(homepage);
+      
+      
+        var fp = "<a id='fp' href='/cn_future_planning' style='position: relative;*/margin-right: 30px;'>未来规划</a>";
+        $('.links').append(fp)
+        
+        var summer_academy = "<a id='sa' href='/cn_summer_academy' style='position: relative;*/margin-right: 30px;'>夏季课程</a>";
+        $('.links').append(summer_academy);
+
+        var story = "<a id='story' href='/cn_stories' style='position: relative;*/margin-right: 30px;'>故事分享</a>";
+        $('.links').append(story)
+        
+        var au = "<a id='au' href='/cn_about_us' style='position: relative;*/margin-right: 30px;'>关于我们</a>";
+        $('.links').append(au)
+        
+        var contact = "<a id='contact' href='/cn_contact' style='position: relative;*/margin-right: 30px;'>联系方式</a>";
+        $('.links').append(contact)
+        
+        var apply =  "<ul><li><a href='#'>APPLY</a><ul><li><a href='/cn_b_bay_apply'>B-BAY</a></li><li><a href='/cn_ideal_apply'>IDEAL</a></li></ul></li></ul>"
+        
+        
+        // var apply = "<a id='apply' href='/cn_b_bay_apply' style='color:#53AA8E;position: relative;*/margin-right: 30px;'>申请</a>";
+        $('.links').append(apply);
+        var english = "<a id='language' href='/' style='position: relative;*/margin-right: 30px;'>English</a>";
+        $('.links').append(english);
+        
+        
+        
+    })
+</script>

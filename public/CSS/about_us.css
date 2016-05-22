@@ -1,0 +1,303 @@
+.top {
+    /*margin-top: 70px;*/
+    background-image: url("../img/aboutus/top.png");
+    height: 550px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+    overflow: hidden;
+    /*top:100px;*/
+}
+
+body {
+    background-color: white;
+    font-family: "Microsoft YaHei";
+}
+
+.banner {
+    position: relative;
+    top: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.ed {
+    font-size: 150%;
+    
+}
+
+hr line
+{
+    position: relative;
+    top: 100px;
+}
+
+hr {
+    height: 4px;
+    background: #53AA8E;
+    border: none;
+    width: 60px;
+}
+
+#line
+{
+    position: relative;
+    top: 50px;
+}
+
+P {
+    /*display: inline;*/
+    font-weight: 300;
+    text-align: center;
+    color: #7F7E7D;
+}
+
+.blacktxt {
+    font-weight: bolder;
+    color: black;
+}
+
+.leftbanner {
+    width: 50%;
+    float: left;
+}
+.banner_two {
+    position: relative;
+    top: 30px;
+    height: 170px;
+}
+
+.txt {
+    display: inline;
+    position: relative;
+    left: 43%;
+}
+
+.rightbanner {
+    width: 50%;
+    float: right;
+}
+
+.peoples {
+    width: 100%;
+    height: 450px;
+    top: 100px;
+    position:relative;
+    background-color: #EFEEEE;
+}
+
+.bottoms {
+    width: 20%;
+    background-color: #EFEEEE;
+    display: inline-block;
+    height: 100%;
+    color: #53AA8E;
+}
+
+.bottoms:hover, .bottoms:hover .companyname {
+    background-color: #53AA8E;
+    color: white;
+}
+
+
+
+
+.l1 {
+    position: absolute;
+    left: 10%;
+}
+
+.c2 {
+    text-transform: uppercase;
+    position: relative;
+    top: 70px;
+    color: white;
+}
+.l2{
+    left: 30%;
+    position: absolute;
+    background-color: #53AA8E;
+    color: white;
+}
+
+.r1 {
+    right: 30%;
+    position: absolute;
+}
+
+.r2 {
+    position: absolute;
+    right: 10%;
+}
+
+
+.earth {
+    /*background-image: url("../img/aboutus/earth.png");*/
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: auto;
+    margin: auto;
+}
+
+.img1 {
+    background-image: url("../img/aboutus/head1.png");
+}
+
+.img2 {
+    background-image: url("../img/aboutus/head2.png");
+}
+
+.img3 {
+    background-image: url("../img/aboutus/head3.png");
+}
+
+.img4 {
+    background-image: url("../img/aboutus/head4.png");
+}
+
+.companyname.c1,.companyname.c3,.companyname.c4 {
+    text-transform: uppercase;
+    position: relative;
+    top: 70px;
+    color: #53AA8E;
+}
+
+.persontitle {
+    position: relative;
+    top: 50px;
+    text-transform: uppercase;
+    font-size: 300%;
+    color: white;
+    
+}
+
+.people_info {
+    position: relative;
+    top: 100px;
+    height: 1000px;
+    width: 100%;
+}
+
+
+.info
+{
+    display: none;
+}
+
+.info
+{
+    position: relative;
+    top: 300px;
+    height: 1000px;
+    
+}
+
+
+.bottoms:hover  .info
+{
+    display: block;
+    vertical-align: middle;
+    position: relative;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.detail
+{
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+}
+
+.current {
+    moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay: 0.5s;
+    -o-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.left {
+    display: none;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -moz-transform: translateX(-220%);
+    -ms-transform: translateX(-220%);
+    -webkit-transform: translateX(-220%);
+    transform: translateX(-220%);
+}
+
+.right {
+    display: none;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -moz-transform: translateX(220%);
+    -ms-transform: translateX(220%);
+    -webkit-transform: translateX(220%);
+    transform: translateX(220%);
+}
+
+.smalllogo {
+    background-image: url("../img/aboutus/chart.png");
+    margin: auto;
+    height: 55px;
+    width: 58px;
+    position: relative;
+    top: 150px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info {
+    height: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+#green
+{
+    color: #53AA8E;
+    height: 2px;
+    width: 5px;
+}
+
+ul li ul li:hover {background: white;}
+ul li ul {
+  background-color: white;
+}

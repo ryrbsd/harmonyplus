@@ -1,0 +1,147 @@
+<!--#include file="app/views/layouts.html.erb"-->
+<head>
+<link rel="stylesheet" type="text/css" href="CSS/Navbar.css">
+<link rel="stylesheet" type="text/css" href="CSS/details.css">
+<!--<link rel="stylesheet" type="text/css" href="CSS/index.css">-->
+</head>
+<title>Harmony Plus Course Detail</title>
+<hr><br/><br/><br/>
+<div class = "firstPart">
+    <h1>课堂内容：课堂形式多样，感受美式教育精髓</h1><br/>
+    <p class="gray">ice break，小组合作，户外拓展等</p><br/>
+    <!--<h1>Classroom Content: classroom forms, feel the essence of American Education</h1><br/>-->
+    <!--<p class="gray">Ice breaks，Group work and other outdoor expansion</p><br/>-->
+    <div class="image">
+        <img src="img/details/forth.png" alt="" align="middle" width="80%" height="24%"/>
+    </div>
+</div>
+<hr><br/>
+<div class= "secondPart">
+    <h1>课外部分：创新企业参访</h1><br/>
+    <p class="gray">做客硅谷顶尖企业，与天才面对面！</p><br/>
+    <div class="image">
+        <img src="img/details/third.png" alt="" align="middle" width="80%" height="24%"/>
+    </div>
+</div>
+<hr><br/>
+<div class= "thirdPart">
+    <h1>明星教授亲自授课，面对面交流</h1><br><br>
+    <div class="info">
+    <div class="head1">
+
+    </div>
+    <div class="discription">
+        <h2>Dana Carney</h2>
+        <h2>主讲课程：组织管理学</h2>
+        <h3>加州大学伯克利哈斯商学院教授</h3>
+        <p class="gray">美国东北大学博士，哈佛大学博士后，曾任哥伦比亚大学副教授，获得了许多奖项和荣誉，例如美国国家科学基金会奖励，CAREER奖，哥伦比亚大学多样性倡议奖等。</p>
+    </div>
+    </div>
+    <br/><br/><br/><br/>
+    <div class="info">
+    <div class="head2">
+        
+    </div>
+    <div class="discription">
+        <h2>Gregory LaBlanc</h2>
+        <h2主讲课程：财务会计，定价策略</h2>
+        <h3>加州大学伯克利哈斯商学院，金融、战略MBA及MFE教授</h3>
+        <p class="gray">LaBlanc教授毕业于沃顿商学院及加州大学伯克利法学院，授课领域包括金融和战略。曾获2009年Earl F. Cheit杰出教学奖以及2004年哈斯EWMBA核心研究生导师。曾为全球知名企业中石化、Facebook、Google等提供服务。</p>
+    </div>
+    </div>
+    <br/><br/><br/><br/>
+    <div class="info">
+    <div class="head3">
+       
+    </div>
+    <div class="discription">
+        <h2>Solomon N. Darwin</h2>
+        <h2>主讲课程：市场营销，开放式创新</h2>
+        <h3>加州大学伯克利哈斯商学院，Garwood企业创新中心执行总监，营销案例学习学术顾问</h3>
+        <p class="gray">Solomon Darwin教授具有丰富的企业管理和学术经验。他是许多商务会议的国际演讲者，其创新领导力、教学、课程开发获得了大量奖项。作为总监之一，他主持了众多重要年度国际会议，创新论坛和财务总监圆桌会议。他拥有16年教学经验，于2005年加入哈斯。</p>
+    </div>
+    </div>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<hr>
+<div class= "forthPart">
+    <br/><br/>
+    <h1>安全保障充分，宿管全程管理</h1><br/><br/><br/>
+    <div class="image">
+        <img src="img/details/second.png" alt="" align="middle" width="80%" height="24%"/>
+    </div>
+</div>
+<br/><br/>
+<hr>
+<div class="fifthPart">
+    <br/><br/>
+    <h1>毕业见证：获得伯克利证书</h1><br/>
+    <p class='gray'>伯克利官方毕业证书</p><br/>
+    <p class='gray'>美国大学申请辅导课</p><br/>
+    <div class="image">
+        <img src="img/details/first.png" alt="" align="middle" width="80%" height="24%"/>
+    </div>
+</div>
+<hr>
+<div class="aaa">
+<div class="sixthPart">
+    <br/><br/>
+    <h4>B-BAY课程安排</h4><br/>
+    <p class='gray'>注：实际课程根据情况可能微调。</p><br/>
+    <div class='schedule bbay'>
+        <img src="img/details/BBAY.png" alt="" align="middle" width="90%" height/>
+    </div>
+</div>
+<br/><br/>
+<hr>
+
+<div class="sixthPart">
+    <br/><br/>
+    <h4>IDEAL课程安排</h4><br/>
+    <p class='gray'>注：实际课程根据情况可能微调。</p><br/>
+    <div class='schedule ideal'>
+        <img src="img/details/IDEAL2.png" alt="" align="middle" width="90%"/>
+    </div>
+</div>
+</div>
+
+
+<script>
+    $(function () {
+
+      $('#fp').remove();
+      $('#story').remove();
+      $('#sa').remove();
+      $('#home').remove();
+      $('#contact').remove();
+      $('#language').remove();
+      $('#au').remove();
+      $('#apply').remove();
+      
+      var homepage = "<a id='home' href='/cn_index' style='position: relative;*/margin-right: 25px;'>首页</a>"
+        $('.links').append(homepage);
+      
+      
+        var fp = "<a id='fp' href='/cn_future_planning' style='position: relative;*/margin-right: 30px;'>未来规划</a>";
+        $('.links').append(fp)
+        
+        var summer_academy = "<a id='sa' href='/cn_summer_academy' style='color:#53AA8E; position: relative;*/margin-right: 30px;'>夏季课程</a>";
+        $('.links').append(summer_academy);
+
+        var story = "<a id='story' href='/cn_stories' style='position: relative;*/margin-right: 30px;'>故事分享</a>";
+        $('.links').append(story)
+        
+        var au = "<a id='au' href='/cn_about_us' style='position: relative;*/margin-right: 30px;'>关于我们</a>";
+        $('.links').append(au)
+        
+        var contact = "<a id='contact' href='/cn_contact' style='position: relative;*/margin-right: 30px;'>联系方式</a>";
+        $('.links').append(contact)
+        
+        var apply =  "<ul><li><a href='#'>申请</a><ul><li><a href='/cn_b_bay_apply'>B-BAY</a></li><li><a href='/cn_ideal_apply'>IDEAL</a></li></ul></li></ul>"
+        
+        // var apply = "<a id='contact' href='/cn_b_bay_apply' style='position: relative;*/margin-right: 30px;'>申请</a>";
+        $('.links').append(apply);
+        var english = "<a id='language' href='/' style='position: relative;*/margin-right: 30px;'>English</a>";
+        $('.links').append(english);
+    })
+</script>

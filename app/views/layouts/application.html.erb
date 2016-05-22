@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<%= javascript_include_tag "application", "data-turbolinks-track" => true  %>
+<html>
+    <head>
+        <!--Universal Site Favicon-->
+        <link rel="shortcut icon" href="/img/Logos/favicon.png" />
+        
+        <!--Title of every page-->
+        <!--<title>Harmony Plus</title>-->
+        
+        <!--Navbar CSS File-->
+        <link rel="stylesheet" type="text/css" href="/CSS/Navbar.css">
+        
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        
+        <!--Bootstrap Javascript File-->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        
+        <!--Devise CSS-->
+        <link rel="stylesheet" type="text/css" href="/CSS/Devise.css">
+        
+        <%= csrf_meta_tags %>
+    </head>
+<body>
+    <!--p class="notice"><!--%= notice %></p>-->
+    <!--<p class="alert"><!--%= alert %></p>-->
+
+    <nav id="transparent-nav" class="transparent-nav">
+      <div class = "logo">
+        <a href="/">
+            <img border="0" alt="harmony_logo" src="/img/Logos/logo.png" class="theImage" width="134" height="46">
+            <!--<div id="theImage" class="theImage"></div>-->
+        </a>
+      </div>
+      <div class="links">
+        <a id="home" href="/">HOME</a>
+        <a id="fp" href="/future_planning">FUTURE PLANNING</a>
+        <a id="sa" href="/summer_academy">SUMMER ACADEMY</a>
+        <a id="story" href="/stories">STORIES</a>
+        <a id="au" href="/about_us">ABOUT US</a>
+        <a id="contact" href="/contact">CONTACT</a>
+        <!--<a id="apply" href="/b_bay_apply">APPLY</a>-->
+        <ul id ="apply">
+          <li>
+            <a href="#">APPLY</a>
+            <ul>
+              <li><a href="/b_bay_apply">B-BAY</a></li>
+              <li><a href="/ideal_apply">IDEAL</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a id="language" href="cn_index">简体中文</a>
+      </div>
+    </nav>
+
+  <%= yield %>
+  
+    <footer class="footer">
+      <div class="footer_container">
+        <p class="text-muted">&copy;2016 Harmony Plus</p>
+        <a href="#top" class="home_link">
+      <img title="GoHome" alt="go_home" src="/img/Footer/footerLink.png" class="home_icon">
+        <% if user_signed_in? %>
+            <a class="login_link" href="/users/sign_out" id="log_in">Sign Out &raquo;</a>
+        <% else %>
+            <a class="login_link" href="/login" id="log_in">Log In &raquo;</a>
+        <% end %>
+      </a>
+      </div>
+    </footer>
+
+</body>
+</html>

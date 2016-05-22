@@ -1,0 +1,102 @@
+<title>stories of us</title>
+<head>
+<link rel="stylesheet" type="text/css" href="CSS/cn_stories.css">
+
+</head>
+
+<div class="title">
+    <h1>故 事&nbsp;<h2>分 享</h2></h1>
+    <br>
+    <hr><br>
+    <p>在这里，读他们的故事，让我们感受每一步足迹，每一次成长。</p>
+</div>
+<div class="container">
+<div class="pictures">
+    <div class="img4">
+        <img src="img/stories/1.png" style="width:100%;">
+        <div class = "cover">
+            <a class="btn btn-primary btn-lg" target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzAwMjU0OTc1OA==&mid=403113561&idx=1&sn=4272c32d2e98fbd74cb4f0d108f4a0aa#rd" role="button">详情</a>
+        </div>
+    </div>   
+    
+    <div class="img4">
+        <img src="img/stories/2.png" style="width:100%;">
+        <div class = "cover">
+            <a class="btn btn-primary btn-lg" target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzAwMjU0OTc1OA==&mid=403412863&idx=1&sn=4fa8108cf654096b56a2f01f5a1d2ed0#rd" role="button">详情</a>
+        </div>
+    </div>
+    <div class="img4">
+        <img src="img/stories/3.png" style="width:100%;">
+        <div class = "cover">
+            <a class="btn btn-primary btn-lg" target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzAwMjU0OTc1OA==&mid=403476501&idx=1&sn=000b24c541f4434b51bab9448e7434ec#rd" role="button">详情</a>
+        </div>
+    </div>
+</div>
+
+<div class="pictures">
+    <div class="img4">
+        <img src="img/stories/4.png" style="width:100%;">
+        <div class = "cover">
+            <a class="btn btn-primary btn-lg" target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzAwMjU0OTc1OA==&mid=403589053&idx=1&sn=f41d6ec0b239466931c8661605475c42#rd" role="button">详情</a>
+        </div>
+    </div>   
+    
+    <div class="img4">
+        <img src="img/stories/5.png" style="width:100%;">
+        <div class = "cover">
+            <a class="btn btn-primary btn-lg" target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzAwMjU0OTc1OA==&mid=403622639&idx=1&sn=2a20518bc1634c63df12bcbc9ddc58f1#rd" role="button">详情</a>
+        </div>
+    </div>
+    <div class="img4">
+        <img src="img/stories/6.png" style="width:100%;">
+        <div class = "cover">
+            <a class="btn btn-primary btn-lg" target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzAwMjU0OTc1OA==&mid=404278556&idx=1&sn=6f2daef9152be4223800dc8a16f24235#rd" role="button">详情</a>
+        </div>
+    </div>
+</div>
+</div>
+<div class="empty">
+    
+</div>
+
+
+
+<script>
+    $(function () {
+
+      $('#fp').remove();
+      $('#story').remove();
+      $('#sa').remove();
+      $('#home').remove();
+      $('#contact').remove();
+      $('#language').remove();
+      $('#au').remove();
+      $('#apply').remove();
+      
+      var homepage = "<a id='home' href='/cn_index' style='position: relative;*/margin-right: 25px;'>首页</a>"
+        $('.links').append(homepage);
+      
+      
+        var fp = "<a id='fp' href='/cn_future_planning' style='position: relative;*/margin-right: 30px;'>未来规划</a>";
+        $('.links').append(fp)
+        
+        var summer_academy = "<a id='sa' href='/cn_summer_academy' style='position: relative;*/margin-right: 30px;'>夏季课程</a>";
+        $('.links').append(summer_academy);
+
+        var story = "<a id='story' href='/cn_stories' style='color:#53AA8E; position: relative;*/margin-right: 30px;'>故事分享</a>";
+        $('.links').append(story)
+        
+        var au = "<a id='au' href='/cn_about_us' style='position: relative;*/margin-right: 30px;'>关于我们</a>";
+        $('.links').append(au)
+        
+        var contact = "<a id='contact' href='/cn_contact' style='position: relative;*/margin-right: 30px;'>联系方式</a>";
+        $('.links').append(contact)
+        
+        var apply =  "<ul><li><a href='#'>申请</a><ul><li><a href='/cn_b_bay_apply'>B-BAY</a></li><li><a href='/cn_ideal_apply'>IDEAL</a></li></ul></li></ul>"
+        
+        // var apply = "<a id='contact' href='/cn_b_bay_apply' style='position: relative;*/margin-right: 30px;'>申请</a>";
+        $('.links').append(apply);
+        var english = "<a id='language' href='/' style='position: relative;*/margin-right: 30px;'>English</a>";
+        $('.links').append(english);
+    })
+</script>

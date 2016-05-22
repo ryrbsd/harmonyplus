@@ -1,0 +1,149 @@
+body {
+    background-color: white;
+}
+
+hr {
+    width: 80%;
+    border-top: 2px solid #eee;
+}
+
+.image {
+    text-align: center;
+}
+
+.firstPart, .secondPart, .forthPart, .fifthPart, .sixthPart {
+    position: relative;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.fifthPart {
+    height: 750px;
+}
+
+
+.forthPart {
+    height: 600px;
+}
+.firstPart {
+    height: 600px;
+}
+
+.secondPart {
+    height: 700px;
+}
+
+.sixthPart {
+    /*height: 1700px;*/
+    text-align: left;
+}
+
+
+h1 {
+    color: rgb(96,96,96);
+}
+
+h2 {
+    color: rgb(83,170,142);
+    font-size: 100%;
+}
+
+h3 {
+    color: #969594;
+    font-weight: 300;
+    font-size: 150%;
+}
+
+h4 {
+    color: rgb(83,170,142);
+    font-size: 200%;
+}
+
+p{
+    line-height: 200%;
+}
+
+.gray {
+    color: #969594;
+}
+
+.thirdPart {
+    height: 1000px;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    display: inline-block;
+    left: 10%;
+}
+
+.head {
+    position: relative;
+    top: -10px;
+    width: 200px;
+    
+    display: inline-block;
+}
+
+.head1, .head2, .head3 {
+    height: 300px;
+    width: 220px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.head1 {
+    background-image: url("../img/details/p1.png");
+}
+
+.head2 {
+    background-image: url("../img/details/p2.png");
+    position: relative;
+    top: 0px;
+}
+
+.head3 {
+    background-image: url("../img/details/p3.png");
+}
+
+
+.discription {
+    width: 60%;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    left: 50px;
+    top: -10px;
+    margin-right: 10%;
+    /*You spelled Description Wrong*/
+}
+
+.info, .discription {
+    height: 300px;
+}
+
+.schedule {
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.bbay {
+    /*background-image: url("../img/details/BBAY.png");*/
+}
+
+.ideal {
+    /*background-image: url("../img/details/IDEAL2.png");*/
+}
+
+.aaa {
+    /*height: 2700px;*/
+    
+}
+
+ul li ul li:hover {background: white;}
+ul li ul {
+  background-color: white;
+}

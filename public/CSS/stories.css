@@ -1,0 +1,52 @@
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    font-size: medium;
+    color: rgb(96,96,96);
+}
+h3 {
+    text-align: center;
+    font-size: large;
+    color: gray;
+}
+body {
+    padding-top: 100px;
+    background-color: white;
+    font-family: "Microsoft YaHei";
+}
+
+p {
+    margin-left: 200px;
+    margin-right: 200px;
+    line-height: 2.0;
+    color: gray;
+}
+hr {
+    height: 4px;
+    background: #53AA8E;
+    border: none;
+    width: 60px;
+}
+.image {
+    text-align: center;
+}
+
+.story-btn-primary {
+    color: rgb(83,170,142);
+    background-color: transparent;
+    border-color: white;
+    margin-left: 45%;
+}
+
+.story-btn-primary.active, .story-btn-primary.focus, .story-btn-primary:active, .story-btn-primary:focus, .story-btn-primary:hover, .open>.dropdown-toggle.story-btn-primary {
+    color: #fff;
+    background-color: rgb(83,170,142);
+    border-color: transparent;
+}
+
+ul li ul li:hover {background: white;}
+ul li ul {
+  background-color: white;
+}
