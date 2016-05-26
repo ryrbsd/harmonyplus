@@ -115,25 +115,21 @@
 <script>
     $(function () {
         document.getElementById("home").style.color = "#53AA8E";
-    })
-</script>
-
-<script>
-  $(document).ready(function(){       
-   var scroll_start = 0;
-   var startchange = $('#startchange');
-   var offset = startchange.offset();
-   $(document).scroll(function() { 
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > 700) {
+        var scroll_start = 0;
+        var startchange = $('.text_container');
+        var offset = startchange.offset();
+        $(document).scroll(function() { 
+        scroll_start = $(this).scrollTop();
+        if(scroll_start > offset) {
           $('#transparent-nav').css('background-color', 'white');
           $('nav.transparent-nav .links a').css('color', 'black');
           $('#home').css('color', '#53AA8E');
-       } else {
+        } else {
           $('#transparent-nav').css('background-color', 'transparent');
           $('nav.transparent-nav .links a').css('color', 'white');
           $('#home').css('color', '#53AA8E');
-       }
-   });
-});
+         }
+     });
+    });
 </script>
+

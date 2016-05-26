@@ -54,13 +54,13 @@ nav.transparent-nav {
   background: transparent;
   position: fixed;
   background-color: transparent;
-  /*background: -webkit-linear-gradient(#202020, transparent);*/
+  /*background: -webkit-linear-gradient(white, transparent);*/
    /*For Safari 5.1 to 6.0 */
-  /*background: -o-linear-gradient(#202020, transparent);*/
+  /*background: -o-linear-gradient(white, transparent);*/
    /*For Opera 11.1 to 12.0 */
-  /*background: -moz-linear-gradient(#202020, transparent);*/
+  /*background: -moz-linear-gradient(white, transparent);*/
    /*For Firefox 3.6 to 15 */
-  /*background: linear-gradient(#202020, transparent);*/
+  /*background: linear-gradient(white, transparent);*/
    /*Standard syntax (must be last) */
 }
 

@@ -5,7 +5,7 @@ HarmonyPlus::Application.routes.draw do
   resources :manager
   resources :applyb
   resources :applyi
-  get 'mainframe', :to => 'mainframe#index', :format => false
+  get 'mainframe', :to => 'index#index', :format => false
   get 'contact', :to => 'mainframe#contact', :format => false
   get 'about_us', :to => 'mainframe#about_us', :format => false
   get 'summer_academy', :to => 'mainframe#summer_academy', :format => false
@@ -15,12 +15,12 @@ HarmonyPlus::Application.routes.draw do
   get 'ideal_apply', :to => 'applyb#ideal_apply', :format => false
   get 'success', :to => 'applyb#success', :format => false
   # get 'success_ideal', :to => 'applyb#success', :format => false
-  get '/', :to => 'mainframe#index', :format => false
+  get '/', :to => 'index#index', :format => false
   get 'details', :to => 'mainframe#details', :format => false
   
   
   # chinese pages
-  get 'cn_index', :to => 'mainframe#index_cn', :format => false
+  get 'cn_index', :to => 'index#index_cn', :format => false
   get 'cn_b_bay_apply', :to => 'applyb#b_bay_apply_cn', :format => false
   get 'cn_ideal_apply', :to => 'applyb#ideal_apply_cn', :format => false
   get 'cn_summer_academy', :to => 'mainframe#summer_academy_cn', :format => false
