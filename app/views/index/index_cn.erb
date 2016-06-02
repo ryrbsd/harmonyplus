@@ -5,7 +5,6 @@
 
 <link rel="stylesheet" type="text/css" href="/CSS/index.css">
 
-
 <div id="top" class="opening">
     <div class="container">
         <h1>为未来点亮一盏明灯 伴你前行</h1>
@@ -154,29 +153,33 @@
         var contact = "<a id='contact' href='/cn_contact' style='position: relative;*/margin-right: 30px;'>联系方式</a>";
         $('.links').append(contact)
         
-        var apply =  "<ul><li><a href='#'>申请</a><ul><li><a href='/cn_b_bay_apply'>B-BAY</a></li><li><a href='/cn_ideal_apply'>IDEAL</a></li></ul></li></ul>"
+        var apply =  "<ul><li><a href='#'>申请</a><ul><li id='lib'><a href='/cn_b_bay_apply'>B-BAY</a></li><li id='lii'><a href='/cn_ideal_apply'>IDEAL</a></li></ul></li></ul>"
         
         // var apply = "<a id='contact' href='/cn_b_bay_apply' style='position: relative;*/margin-right: 30px;'>申请</a>";
         $('.links').append(apply);
         var english = "<a id='language' href='/' style='position: relative;*/margin-right: 30px;'>English</a>";
         $('.links').append(english);
-           var scroll_start = 0;
-   var startchange = $('.text_container');
-   var offset = startchange.offset();
-   $(document).scroll(function() { 
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-          $('#transparent-nav').css('background-color', 'white');
-          $('nav.transparent-nav .links a').css('color', 'black');
-          $('#home').css('color', '#53AA8E');
-       } else {
-          $('#transparent-nav').css('background-color', 'transparent');
-          $('nav.transparent-nav .links a').css('color', 'white');
-          $('#home').css('color', '#53AA8E');
-          
-       }
-   });
+        
+        // if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        //   document.getElementById("transparent-nav").className = "trans-nav";
+        // } else {
+        //     document.getElementById("transparent-nav").className = "transparent-nav";
+        // }
     })
+    
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          document.getElementById("transparent-nav").className = "trans-nav";
+          document.getElementById("lib").style.backgroundColor = "white";
+          document.getElementById("lii").style.backgroundColor = "white";
+        } else {
+            document.getElementById("transparent-nav").className = "transparent-nav";
+            document.getElementById("lib").style.backgroundColor = "transparent";
+            document.getElementById("lii").style.backgroundColor = "transparent";
+        }
+}
 </script>
 
 

@@ -55,15 +55,30 @@ hr {
     color: white;
 }
 
+
+
 nav.transparent-nav {
-  /*margin-top: -40px;*/
-  background: transparent;
+  margin-top: -40px;
   position: fixed;
   background: transparent;
 }
 
 nav.transparent-nav .links a {
   color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav.trans-nav {
+
+  position: fixed;
+  background: white;
+  background-color: white;
+}
+
+nav.trans-nav .links a {
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -110,6 +125,8 @@ nav.transparent-nav .links a {
     bottom: 200px;
     
 }
+
+
 
 /*.special_text{*/
 /*    text-align: center;*/

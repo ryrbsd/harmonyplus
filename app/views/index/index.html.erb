@@ -112,24 +112,5 @@
 </div>
 <br></br><br></br>
 
-<script>
-    $(function () {
-        document.getElementById("home").style.color = "#53AA8E";
-        var scroll_start = 0;
-        var startchange = $('.text_container');
-        var offset = startchange.offset();
-        $(document).scroll(function() { 
-        scroll_start = $(this).scrollTop();
-        if(scroll_start > offset) {
-          $('#transparent-nav').css('background-color', 'white');
-          $('nav.transparent-nav .links a').css('color', 'black');
-          $('#home').css('color', '#53AA8E');
-        } else {
-          $('#transparent-nav').css('background-color', 'transparent');
-          $('nav.transparent-nav .links a').css('color', 'white');
-          $('#home').css('color', '#53AA8E');
-         }
-     });
-    });
-</script>
+
 

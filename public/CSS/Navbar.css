@@ -22,6 +22,19 @@ nav.transparent-nav {
   z-index:99999;
 }
 
+nav.trans-nav {
+ /* For browsers that do not support gradients */
+  width: 100%;
+  top: 0px;
+  height: 100px;
+  margin:0;
+  padding:0;
+  position: fixed;
+  display: inline-block;
+  background: white;
+  z-index:99999;
+}
+
 .logo {
   position: fixed;
   color: black;
@@ -37,7 +50,18 @@ nav.transparent-nav .links a {
   text-decoration: none;
 }
 
+nav.trans-nav .links a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 nav.transparent-nav .links a.selected, nav.transparent-nav .links a:hover {
+  color: rgb(83,170,142);
+}
+
+nav.trans-nav .links a.selected, nav.trans-nav .links a:hover {
   color: rgb(83,170,142);
 }
 
