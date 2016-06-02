@@ -56,7 +56,7 @@
   <p>在这里，读他们的故事，让我们一同感受每一步足迹，每一次成长。</p>
   <br></br><br>
 </div>
-<body>
+<div class="marquee-container">
   <div class="marquee">
     <div class="col-md-4">
       <div class="image">
@@ -117,6 +117,7 @@
       <p class="story">徐教授是斯坦福医学院高级研究员，还是一位育儿有方的妈妈，长女品学兼优、艺术出色、体育尤为突出，拿到了UC Berkeley以及Stanford的录取通知书，最终选择了Stanford并将生物医学工程当做自己未来专业。从明星教授到育儿有方的妈妈，徐教授为我们分享了她的育儿智慧和心得。</p>
     </div>
   </div>
+</div>
   <br></br>
   <a class="btn btn-primary btn-lg story_button" href="/cn_stories" role="button">更多故事</a>
 </div>
@@ -167,20 +168,9 @@
         // }
     })
     
-    window.onscroll = function() {myFunction()};
-    
-    function myFunction() {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-          document.getElementById("transparent-nav").className = "trans-nav";
-          document.getElementById("lib").style.backgroundColor = "white";
-          document.getElementById("lii").style.backgroundColor = "white";
-        } else {
-            document.getElementById("transparent-nav").className = "transparent-nav";
-            document.getElementById("lib").style.backgroundColor = "transparent";
-            document.getElementById("lii").style.backgroundColor = "transparent";
-        }
-}
 </script>
+
+
 
 
 

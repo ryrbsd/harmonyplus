@@ -226,3 +226,8 @@ h4, h5 {
 h5 {
     font-size: medium;
 }
+
+.marquee-container {
+    height: 1500px;
+    width: 100%;
+}
