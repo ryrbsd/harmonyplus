@@ -15,8 +15,10 @@ HarmonyPlus::Application.routes.draw do
   get 'ideal_apply', :to => 'applyb#ideal_apply', :format => false
   get 'success', :to => 'applyb#success', :format => false
   # get 'success_ideal', :to => 'applyb#success', :format => false
-  get '/', :to => 'index#index', :format => false
+  get '/', :to => 'index#index_cn', :format => false
   get 'details', :to => 'mainframe#details', :format => false
+  
+  get 'en_index', :to => 'index#index', :format => false
   
   
   # chinese pages
