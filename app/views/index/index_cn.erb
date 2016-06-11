@@ -170,6 +170,22 @@
     
 </script>
 
+<script>
+      window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          document.getElementById("transparent-nav").className = "trans-nav";
+          document.getElementById("lib").style.backgroundColor = "white";
+          document.getElementById("lii").style.backgroundColor = "white";
+        } else {
+            document.getElementById("transparent-nav").className = "transparent-nav";
+            document.getElementById("lib").style.backgroundColor = "transparent";
+            document.getElementById("lii").style.backgroundColor = "transparent";
+        }
+  }
+</script>
+
 
 
 
